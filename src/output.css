@@ -16,7 +16,6 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-jo: "Jost", sans-serif;
-    --font-pp: "Poly", serif;
   }
 }
 @layer base {
@@ -217,14 +216,29 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-\[\#515050\] {
-    background-color: #515050;
-  }
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-\[url\(\'\.\.\/img\/\'\)\] {
+    background-image: url('../img/');
+  }
   .bg-\[url\(\'\.\.\/img\/banner\.png\'\)\] {
     background-image: url('../img/banner.png');
+  }
+  .bg-\[url\(\'\.\.\/img\/sale\'\)\] {
+    background-image: url('../img/sale');
+  }
+  .bg-\[url\(\'\.\.\/img\/sale1\'\)\] {
+    background-image: url('../img/sale1');
+  }
+  .bg-\[url\(\'\.\.\/img\/sale1\.\'\)\] {
+    background-image: url('../img/sale1.');
+  }
+  .bg-\[url\(\'\.\.\/img\/sale1\.jpg\'\)\] {
+    background-image: url('../img/sale1.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/sale22\.jpg\'\)\] {
+    background-image: url('../img/sale22.jpg');
   }
   .bg-cover {
     background-size: cover;
@@ -255,9 +269,6 @@
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
-  }
-  .pl-8 {
-    padding-left: calc(var(--spacing) * 8);
   }
   .pl-\[143px\] {
     padding-left: 143px;
@@ -305,21 +316,6 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
-  }
-  .lg\:h-\[720px\] {
-    @media (width >= 64rem) {
-      height: 720px;
-    }
-  }
-  .lg\:w-\[1280px\] {
-    @media (width >= 64rem) {
-      width: 1280px;
-    }
-  }
-  .lg\:pl-\[143px\] {
-    @media (width >= 64rem) {
-      padding-left: 143px;
-    }
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
