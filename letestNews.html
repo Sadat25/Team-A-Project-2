@@ -15,110 +15,266 @@
         rel="stylesheet">
     <!-- ====== font ====== -->
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
     <section class="py-5">
         <div class="max-w-[1280px] m-auto">
             <!-- =============Heding============ -->
-            <div class="text-center py-5">
-                <h3 class="font-medium text-[40px] font-jost text-[#222222]">Our Latest News & Blogs</h3>
-                <p class="font-jost text-lg text-[#757575]">Stay inspired with trend stories, expert styling tips, and
+            <div class="text-center px-3 py-5 ">
+                <h3 class="pb-2 md:pb-0 font-medium text-[26px] md:text-[30px] lg:text-[40px] font-jost text-[#222222]">
+                    Our Latest News & Blogs</h3>
+                <p class="font-jost text-sm md:text-md lg:text-lg text-[#757575]">Stay inspired with trend stories,
+                    expert styling tips, and
                     fresh fashion insights — all curated just for you.</p>
             </div>
             <!-- =============Heding============ -->
 
             <!-- ======================next============================= -->
 
-            <div class="flex items-center py-5">
+            <!-- <div class="md:flex justify-center md:justify-around items-center py-5"> -->
 
-                <!-- =======card 1============ -->
-                <div class=" w-[33%]">
-                    <img src="src/images/pic1.jpg" alt="news" class="w-[400px] h-[400px]">
-                    <div class="bg-[#F3F3F3] p-6 w-[400px]">
-                        <h5 class="font-medium font-jost text-[12px] text-[#B3404A]">NEWS</h5>
-                        <h4 class="text-[#222222] font-medium font-jost text-2xl pt-[10px] pb-[15px]">Effortless Style
-                            Made Easy</h4>
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                            </svg>
-                            <p class="text-[#222222] font-jost text-[12px]">By : <span class="font-medium">Michell
-                                    Kharesan</span></p>
+            <div class="swiper mySwiper mx-2">
+                <div class="swiper-wrapper">
+                    
+                        <!-- =======card 1============ -->
+                        <div class="swiper-slide ">
+                            <img src="src/images/pic1.jpg" alt="news" class="w-full">
+                            <div class="bg-[#F3F3F3] p-6 w-full">
+                                <h5 class="font-medium font-jost text-[12px] text-[#B3404A]">NEWS</h5>
+                                <h4
+                                    class="text-[#222222] font-medium font-jost text-lg md:text-xl lg:text-2xl pt-[10px] pb-[15px]">
+                                    Effortless Style
+                                    Made Easy</h4>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                    </svg>
+                                    <p class="text-[#222222] font-jost text-[12px]">By : <span
+                                            class="font-medium">Michell
+                                            Kharesan</span></p>
+                                </div>
+                                <p class="text-[#757575] font-jost text-[14px] py-6 leading-7">Look stylish with minimal
+                                    effort
+                                    using versatile basics perfect for everyday wear.</p>
+                                <a href="#" class="text-[#222222] font-jost text-[14px] font-medium">
+                                    <span
+                                        class="relative inline-block after:content-[''] after:block after:w-full after:h-[1px] after:bg-[#222222] after:mt-1">READ
+                                        MORE</span>
+                                </a>
+                            </div>
                         </div>
-                        <p class="text-[#757575] font-jost text-[16px] py-6 leading-7">Look stylish with minimal effort
-                            using versatile basics perfect for everyday wear.</p>
-                        <a href="#" class="text-[#222222] font-jost text-[14px] font-medium">
-                            <span
-                                class="relative inline-block after:content-[''] after:block after:w-full after:h-[1px] after:bg-[#222222] after:mt-1">READ
-                                MORE</span>
-                        </a>
-                    </div>
-                </div>
-                <!-- =======card 1============ -->
+                        <!-- =======card 1============ -->
 
-                <!-- =======card 2============ -->
+                        <!-- =======card 2============ -->
 
-                <div class=" w-[33%]">
-                    <img src="src/images/pic2.jpg" alt="news" class="w-[400px] h-[400px]">
-                    <div class="bg-[#F3F3F3] p-6 w-[400px]">
-                        <h5 class="font-medium font-jost text-[12px] text-[#B3404A]">NEWS</h5>
-                        <h4 class="text-[#222222] font-medium font-jost text-2xl pt-[10px] pb-[15px]">Oversized Denim
-                            Looks Are In</h4>
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                            </svg>
-                            <p class="text-[#222222] font-jost text-[12px]">By : <span class="font-medium">Michell
-                                    Kharesan</span></p>
+                        <div class=" swiper-slide  ">
+                            <img src="src/images/pic2.jpg" alt="news" class="w-full">
+                            <div class="bg-[#F3F3F3] p-6 w-full">
+                                <h5 class="font-medium font-jost text-[12px] text-[#B3404A]">NEWS</h5>
+                                <h4
+                                    class="text-[#222222] font-medium font-jost text-lg md:text-xl lg:text-2xl pt-[10px] pb-[15px]">
+                                    Oversized Denim
+                                    Looks Are In</h4>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                    </svg>
+                                    <p class="text-[#222222] font-jost text-[12px]">By : <span
+                                            class="font-medium">Michell
+                                            Kharesan</span></p>
+                                </div>
+                                <p class="text-[#757575] font-jost text-[14px] py-6 leading-7">From jackets to shirts,
+                                    oversized
+                                    pieces bring comfort and a modern edge to your wardrobe.</p>
+                                <a href="#" class="text-[#222222] font-jost text-[14px] font-medium">
+                                    <span
+                                        class="relative inline-block after:content-[''] after:block after:w-full after:h-[1px] after:bg-[#222222] after:mt-1">READ
+                                        MORE</span>
+                                </a>
+                            </div>
                         </div>
-                        <p class="text-[#757575] font-jost text-[16px] py-6 leading-7">From jackets to shirts, oversized
-                            pieces bring comfort and a modern edge to your wardrobe.</p>
-                        <a href="#" class="text-[#222222] font-jost text-[14px] font-medium">
-                            <span
-                                class="relative inline-block after:content-[''] after:block after:w-full after:h-[1px] after:bg-[#222222] after:mt-1">READ
-                                MORE</span>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- =======card 2============ -->
+                        <!-- =======card 2============ -->
 
-                <!-- =======card 3============ -->
+                        <!-- =======card 3============ -->
 
-                <div class=" w-[33%]">
-                    <img src="src/images/pic3.jpg" alt="news" class="w-[400px] h-[400px]">
-                    <div class="bg-[#F3F3F3] p-6 w-[400px]">
-                        <h5 class="font-medium font-jost text-[12px] text-[#B3404A]">NEWS</h5>
-                        <h4 class="text-[#222222] font-medium font-jost text-2xl pt-[10px] pb-[15px]">The Power of Mini Bags</h4>
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-5">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                            </svg>
-                            <p class="text-[#222222] font-jost text-[12px]">By : <span class="font-medium">Michell
-                                    Kharesan</span></p>
+                        <div class=" swiper-slide ">
+                            <img src="src/images/pic3.jpg" alt="news" class="w-full">
+                            <div class="bg-[#F3F3F3] p-6 w-full mb-4">
+                                <h5 class="font-medium font-jost text-[12px] text-[#B3404A]">NEWS</h5>
+                                <h4
+                                    class="text-[#222222] font-medium font-jost text-lg md:text-xl lg:text-2xl pt-[10px] pb-[15px]">
+                                    The Power
+                                    of Mini
+                                    Bags</h4>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                    </svg>
+                                    <p class="text-[#222222] font-jost text-[12px]">By : <span
+                                            class="font-medium">Michell
+                                            Kharesan</span></p>
+                                </div>
+                                <p class="text-[#757575] font-jost text-[16px] py-6 leading-7">Small in size, big on
+                                    impact —
+                                    mini bags are the ultimate accessory to complete your look.</p>
+                                <a href="#" class="text-[#222222] font-jost text-[14px] font-medium">
+                                    <span
+                                        class="relative inline-block after:content-[''] after:block after:w-full after:h-[1px] after:bg-[#222222] after:mt-1">READ
+                                        MORE</span>
+                                </a>
+                            </div>
                         </div>
-                        <p class="text-[#757575] font-jost text-[16px] py-6 leading-7">Small in size, big on impact — mini bags are the ultimate accessory to complete your look.</p>
-                        <a href="#" class="text-[#222222] font-jost text-[14px] font-medium">
-                            <span
-                                class="relative inline-block after:content-[''] after:block after:w-full after:h-[1px] after:bg-[#222222] after:mt-1">READ
-                                MORE</span>
-                        </a>
+
+                        <!-- =======card 3============ -->
+                        <!-- =======card 1============ -->
+                        <div class="swiper-slide ">
+                            <img src="src/images/pic1.jpg" alt="news" class="w-full">
+                            <div class="bg-[#F3F3F3] p-6 w-full">
+                                <h5 class="font-medium font-jost text-[12px] text-[#B3404A]">NEWS</h5>
+                                <h4
+                                    class="text-[#222222] font-medium font-jost text-lg md:text-xl lg:text-2xl pt-[10px] pb-[15px]">
+                                    Effortless Style
+                                    Made Easy</h4>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                    </svg>
+                                    <p class="text-[#222222] font-jost text-[12px]">By : <span
+                                            class="font-medium">Michell
+                                            Kharesan</span></p>
+                                </div>
+                                <p class="text-[#757575] font-jost text-[14px] py-6 leading-7">Look stylish with minimal
+                                    effort
+                                    using versatile basics perfect for everyday wear.</p>
+                                <a href="#" class="text-[#222222] font-jost text-[14px] font-medium">
+                                    <span
+                                        class="relative inline-block after:content-[''] after:block after:w-full after:h-[1px] after:bg-[#222222] after:mt-1">READ
+                                        MORE</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- =======card 1============ -->
+
+                        <!-- =======card 2============ -->
+
+                        <div class=" swiper-slide  ">
+                            <img src="src/images/pic2.jpg" alt="news" class="w-full">
+                            <div class="bg-[#F3F3F3] p-6 w-full">
+                                <h5 class="font-medium font-jost text-[12px] text-[#B3404A]">NEWS</h5>
+                                <h4
+                                    class="text-[#222222] font-medium font-jost text-lg md:text-xl lg:text-2xl pt-[10px] pb-[15px]">
+                                    Oversized Denim
+                                    Looks Are In</h4>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                    </svg>
+                                    <p class="text-[#222222] font-jost text-[12px]">By : <span
+                                            class="font-medium">Michell
+                                            Kharesan</span></p>
+                                </div>
+                                <p class="text-[#757575] font-jost text-[14px] py-6 leading-7">From jackets to shirts,
+                                    oversized
+                                    pieces bring comfort and a modern edge to your wardrobe.</p>
+                                <a href="#" class="text-[#222222] font-jost text-[14px] font-medium">
+                                    <span
+                                        class="relative inline-block after:content-[''] after:block after:w-full after:h-[1px] after:bg-[#222222] after:mt-1">READ
+                                        MORE</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- =======card 2============ -->
+
+                        <!-- =======card 3============ -->
+
+                        <div class=" swiper-slide ">
+                            <img src="src/images/pic3.jpg" alt="news" class="w-full">
+                            <div class="bg-[#F3F3F3] p-6 w-full mb-11">
+                                <h5 class="font-medium font-jost text-[12px] text-[#B3404A]">NEWS</h5>
+                                <h4
+                                    class="text-[#222222] font-medium font-jost text-lg md:text-xl lg:text-2xl pt-[10px] pb-[15px]">
+                                    The Power
+                                    of Mini
+                                    Bags</h4>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                    </svg>
+                                    <p class="text-[#222222] font-jost text-[12px]">By : <span
+                                            class="font-medium">Michell
+                                            Kharesan</span></p>
+                                </div>
+                                <p class="text-[#757575] font-jost text-[16px] py-6 leading-7">Small in size, big on
+                                    impact —
+                                    mini bags are the ultimate accessory to complete your look.</p>
+                                <a href="#" class="text-[#222222] font-jost text-[14px] font-medium">
+                                    <span
+                                        class="relative inline-block after:content-[''] after:block after:w-full after:h-[1px] after:bg-[#222222] after:mt-1">READ
+                                        MORE</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- =======card 3============ -->
+
+                        
                     </div>
-                </div>
-
-                <!-- =======card 3============ -->
-
+                <div class="swiper-pagination mt-5"></div>
             </div>
+            <!-- </div> -->
 
         </div>
     </section>
+
+
+    <!-- -======================script============ -->
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            },
+        });
+    </script>
+
+    <!-- -======================script============ -->
 </body>
 
 </html>
