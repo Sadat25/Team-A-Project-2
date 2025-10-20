@@ -170,8 +170,14 @@
   .relative {
     position: relative;
   }
+  .top-12 {
+    top: calc(var(--spacing) * 12);
+  }
   .top-12\.5 {
     top: calc(var(--spacing) * 12.5);
+  }
+  .left-12 {
+    left: calc(var(--spacing) * 12);
   }
   .left-12\.5 {
     left: calc(var(--spacing) * 12.5);
@@ -194,8 +200,8 @@
   .container {
     margin-inline: auto;
   }
-  .mx-auto {
-    margin-inline: auto;
+  .mt-11 {
+    margin-top: calc(var(--spacing) * 11);
   }
   .mt-11\.25 {
     margin-top: calc(var(--spacing) * 11.25);
@@ -203,11 +209,23 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
   .h-85 {
     height: calc(var(--spacing) * 85);
+  }
+  .h-86 {
+    height: calc(var(--spacing) * 86);
+  }
+  .h-158 {
+    height: calc(var(--spacing) * 158);
   }
   .h-178 {
     height: calc(var(--spacing) * 178);
@@ -218,8 +236,14 @@
   .w-\[320px\] {
     width: 320px;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -227,8 +251,18 @@
   .flex-row {
     flex-direction: row;
   }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .bg-amber-600 {
     background-color: var(--color-amber-600);
@@ -239,8 +273,14 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
+  }
+  .pt-1 {
+    padding-top: calc(var(--spacing) * 1);
   }
   .pt-1\.5 {
     padding-top: calc(var(--spacing) * 1.5);
@@ -253,6 +293,9 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-7 {
+    padding-bottom: calc(var(--spacing) * 7);
   }
   .pb-7\.5 {
     padding-bottom: calc(var(--spacing) * 7.5);
@@ -279,6 +322,13 @@
   .text-\[\#757575\] {
     color: #757575;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .hover\:shadow-xl {
     &:hover {
       @media (hover: hover) {
@@ -288,9 +338,19 @@
     }
   }
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-shadow {
   syntax: "*";
@@ -360,7 +420,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
