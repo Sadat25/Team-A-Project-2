@@ -1,0 +1,12 @@
+.designed {
+  background: linear-gradient(to right, #F3F3F3 50%, transparent 50%), url('./images/new-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
+@media (max-width: 768px) {
+  .designed {
+    background: #F3F3F3
+  }
+}
