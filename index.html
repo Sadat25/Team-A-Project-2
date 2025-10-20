@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modevo Navbar</title>
+  <link rel="stylesheet" href="src/output.css">
 </head>
 <body>
-  
+
+  <!-- Navbar -->
+  <header class="w-full border-b border-gray-200"> 
+    <div class="flex justify-between items-center px-6 py-4">
+      
+      <!-- Left: Logo -->
+      <div class="text-2xl font-bold text-gray-900">Modevo</div>
+
+      <!-- Center: Nav Links -->
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
+        <a href="#" class="hover:text-black">HOME</a>
+        <a href="#" class="hover:text-black">SHOP</a>
+        <a href="#" class="hover:text-black">PRODUCT</a>
+        <a href="#" class="hover:text-black">PAGES</a>
+        <a href="#" class="hover:text-black">BLOG</a>
+      </nav>
+
+      <!-- Right: Icons -->
+      <div class="flex items-center space-x-5">
+        <button><img src="images/search.png" alt=""><i class="fas fa-search text-gray-700 text-lg"></i></button>
+        <button><img src="images/person.png" alt=""><i class="far fa-user text-gray-700 text-lg"></i></button>
+        <button><img src="images/heart.png" alt=""><i class="far fa-user text-gray-700 text-lg"></i></button>
+        <button class="relative"><img src="images/cart.png" alt=""><i class="far fa-user text-gray-700 text-lg"></i></button>
+
+        <!-- Wishlist -->
+        <div class="">
+          <i class="far fa-heart text-gray-700 text-lg"></i>
+          <span class="absolute top-[20px] right-[100px] bg-red-500 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">0</span>
+        </div>
+
+        <!-- Cart -->
+        <div class="">
+          <i class="fas fa-shopping-bag text-gray-700 text-lg"></i>
+          <span class="absolute top-[20px] right-[60px] bg-red-500 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">0</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Search Bar -->
+    
+    <div class="flex items-center justify-center px-6 py-3 bg-gray-50 relative">
+        <div class="absolute top-[13px] left-5">
+            <img class="" src="images/bar.png" alt="">
+         </div>
+      <div class="flex items-center border border-gray-300 rounded-md w-full max-w-4xl">
+        
+        <!-- Left: Menu Button -->
+         
+        <button class="flex items-center px-4 py-2 border-r border-gray-300 text-sm text-gray-700 bg-gray-100 hover:bg-gray-200">
+          <i class="fas fa-bars mr-2"></i>
+          All Departments
+          <i class="fas fa-chevron-down ml-2 text-xs"></i>
+        </button>
+
+        <!-- Search Input -->
+        <input type="text" placeholder="Search..." class="flex-grow px-4 py-2 focus:outline-none">
+
+        <!-- Category Dropdown -->
+        <select class="border-l border-gray-300 px-4 py-2 text-sm text-gray-700 focus:outline-none">
+          <option>All Category</option>
+          <option>Electronics</option>
+          <option>Fashion</option>
+          <option>Accessories</option>
+        </select>
+
+        <!-- Search Button -->
+        <button class="bg-black text-white px-8 py-4 rounded-r-md hover:bg-gray-800">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!---banner start-->
+   <section class="mt-6">
+    <div class="w-[1280px] h-[720px] mx-auto bg-[url('../img/banner.png')] bg-cover bg-center py-[160px]  pl-[143px]">
+        <h2 class="font-medium text-[64px] font-jo leading-tight">Fresh Looks for<br> Warmer Days</h2>
+        <p class="mt-5 font-normal text-[20px] font-jo">Unveil bold layers and timeless silhouettes — designed to<br> define your Spring/Summer 2027 look.</p>
+        <div class="flex gap-4 mt-[40px]">
+            <a class="px-8 py-3 bg-black text-white font-medium text-[16px] inline-block">DISCOVER COLLECTION</a>
+            <a class="px-8 py-3 bg-black text-white font-medium text-[16px] inline-block">SHOP NOW</a>
+        </div>
+       
+    </div>
+   </section>
+   <!---banner end-->
+   <!---sale start-->
+   <section>
+    <div class="flex w-[1280px] mx-auto justify-between py-[40px]">
+        <div class="w-[624px] h-[343px] bg-[url('../img/sale1.jpg')] bg-cover bg-center px-10 py-8">
+           <h5 class="font-medium text-[16px] leading-[18px] text-[#757575]">SALE UP TO 25%</h5>
+           <h3 class="pt-6 pb-8 font-medium text-[32px] font-jost">It’s in the Bag:<br> Limited Deals</h3>
+            <a class="px-8 py-3  bg-black text-white font-medium text-[16px] inline-block">SHOP NOW</a>
+        </div>
+              <div class="w-[624px] h-[343px] bg-[url('../img/sale22.jpg')] bg-cover bg-center px-10 py-8">
+           <h5 class="font-medium text-[16px] leading-[18px] text-[#757575]">SALE UP TO 25%</h5>
+           <h3 class="pt-6 pb-8 font-medium text-[32px]">Make a Statement <br> This Season</h3>
+            <a class="px-8 py-3  bg-black text-white font-medium text-[16px] inline-block">SHOP NOW</a>
+        </div>
+       
+    </div>
+
+   </section>
+   <!---sale end-->
+
 </body>
 </html>
