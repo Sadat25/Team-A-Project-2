@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+<<<<<<< HEAD
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-amber-600: oklch(66.6% 0.179 58.318);
@@ -27,14 +28,27 @@
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+=======
+    --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-amber-600: oklch(66.6% 0.179 58.318);
+    --spacing: 0.25rem;
+>>>>>>> 413dc416863860f85b072049392226fce568496b
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+<<<<<<< HEAD
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-md: 0.375rem;
+=======
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-medium: 500;
+>>>>>>> 413dc416863860f85b072049392226fce568496b
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -188,6 +202,7 @@
   }
 }
 @layer utilities {
+<<<<<<< HEAD
   .absolute {
     position: absolute;
   }
@@ -295,6 +310,22 @@
   }
   .ml-\[-40px\] {
     margin-left: -40px;
+=======
+  .m-auto {
+    margin: auto;
+  }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-\[84px\] {
+    margin-top: 84px;
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-21 {
+    margin-bottom: calc(var(--spacing) * 21);
+>>>>>>> 413dc416863860f85b072049392226fce568496b
   }
   .flex {
     display: flex;
@@ -302,6 +333,7 @@
   .hidden {
     display: none;
   }
+<<<<<<< HEAD
   .table {
     display: table;
   }
@@ -331,10 +363,24 @@
   }
   .resize {
     resize: both;
+=======
+  .h-20\.5 {
+    height: calc(var(--spacing) * 20.5);
+  }
+  .w-20\.5 {
+    width: calc(var(--spacing) * 20.5);
+  }
+  .max-w-\[1280px\] {
+    max-width: 1280px;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+>>>>>>> 413dc416863860f85b072049392226fce568496b
   }
   .items-center {
     align-items: center;
   }
+<<<<<<< HEAD
   .items-start {
     align-items: flex-start;
   }
@@ -367,10 +413,18 @@
   }
   .overflow-hidden {
     overflow: hidden;
+=======
+  .justify-between {
+    justify-content: space-between;
+  }
+  .gap-\[15px\] {
+    gap: 15px;
+>>>>>>> 413dc416863860f85b072049392226fce568496b
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+<<<<<<< HEAD
   .rounded-md {
     border-radius: var(--radius-md);
   }
@@ -457,11 +511,20 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+=======
+  .bg-amber-600 {
+    background-color: var(--color-amber-600);
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+>>>>>>> 413dc416863860f85b072049392226fce568496b
   }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
+<<<<<<< HEAD
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -476,11 +539,21 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+=======
+  .leading-7 {
+    --tw-leading: calc(var(--spacing) * 7);
+    line-height: calc(var(--spacing) * 7);
+  }
+  .leading-\[60px\] {
+    --tw-leading: 60px;
+    line-height: 60px;
+>>>>>>> 413dc416863860f85b072049392226fce568496b
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+<<<<<<< HEAD
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
@@ -546,23 +619,58 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+=======
+  .tracking-\[0\.46\%\] {
+    --tw-tracking: 0.46%;
+    letter-spacing: 0.46%;
+  }
+  .text-\[\#757575\] {
+    color: #757575;
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:text-\[40px\] {
+    @media (width >= 64rem) {
+      font-size: 40px;
+    }
+  }
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+>>>>>>> 413dc416863860f85b072049392226fce568496b
 }
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
+<<<<<<< HEAD
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
+=======
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+>>>>>>> 413dc416863860f85b072049392226fce568496b
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+<<<<<<< HEAD
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
+=======
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+>>>>>>> 413dc416863860f85b072049392226fce568496b
     }
   }
 }
